@@ -271,6 +271,9 @@ on post-fs-data
     chmod 0744 /data/vendor/mac_addr
     #-ExtB HONGMI-167704,zhusizhe.wt,Add,20230116,Create mac_addr mount point
 
+    # Create Audio HAL data directory
+    mkdir /data/vendor/audiohal 0771 system audio
+
     # Set SELinux security contexts on upgrade or policy update.
     restorecon_recursive /mnt/vendor/nvdata
 
