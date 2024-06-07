@@ -21,7 +21,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # A/B
 PRODUCT_PACKAGES += \
-    android.hardware.boot \
     android.hardware.boot-service.default_recovery
 
 PRODUCT_PACKAGES += \
